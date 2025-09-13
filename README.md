@@ -85,13 +85,6 @@ O app foi desenvolvido com foco na responsividade, funcionando perfeitamente em:
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 🤝 Contribuições
+## 🖼️ Imagem do projeto
+<img width="2000" height="1200" alt="Design sem nome" src="https://github.com/user-attachments/assets/5bb26668-3a48-4421-89c8-a5eaab5bfc87" />
 
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
-
----
-
-Desenvolvido com ❤️ por [Seu Nome]
