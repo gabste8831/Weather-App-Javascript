@@ -1,6 +1,6 @@
 # 🌤️ Weather App
 
-Uma aplicação web moderna e responsiva para consultar informações do clima em tempo real.
+Uma aplicação web moderna e responsiva para consultar informações do clima em tempo real, da cidade que desejar!
 
 ## ✨ Funcionalidades
 
@@ -13,26 +13,22 @@ Uma aplicação web moderna e responsiva para consultar informações do clima e
 
 ## 🚀 Como usar
 
-### **Para usuários (após clonar o repositório):**
-
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/weather-app.git
-   cd weather-app
+   git clone https://github.com/gabste8831/Weather-App-Javascript.git
    ```
 
-2. **Configure sua API Key (ÚNICO passo necessário!)**
+2. **Configure sua API Key e sua URL base**
    - Obtenha uma chave gratuita em [AccuWeather API](https://developer.accuweather.com/)
-   - Abra o arquivo `config.js`
-   - Substitua `add_your_api_key_here` pela sua chave real
-   - **Pronto!** 🎉
+   - Abra o arquivo `js/weather.js`
+   - Substitua `CONFIG.BASE_URL` pela sua url de acesso ('https://dataservice.accuweather.com').
+   - Substitua `CONFIG.API_KEY` pela sua chave de acesso.
 
 3. **Execute o projeto**
-   - Abra o arquivo `index.html` em seu navegador
-   - **Não precisa instalar nada!** É vanilla JavaScript
+   - Abra o arquivo `index.html` em seu compilador, e basta rodar!
 
 ### **✨ Isso é tudo!** 
-O projeto funciona imediatamente após configurar a API key. Não há dependências, build steps ou configurações complexas.
+O projeto funciona imediatamente após configurar a API.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -44,28 +40,20 @@ O projeto funciona imediatamente após configurar a API key. Não há dependênc
 ## 📁 Estrutura do projeto
 
 ```
-weather-app/
+Weather-App-Javascript/
 ├── index.html          # Página principal
 ├── css/
 │   └── style.css       # Estilos da aplicação
 ├── js/
 │   ├── app.js          # Lógica principal
-│   └── weather.js      # Integração com API
+│   └── weather.js      # Integração com API (edite aqui sua API key)
 ├── src/
 │   ├── icons/          # Ícones do clima
 │   ├── day.jpg         # Imagem de fundo (dia)
 │   └── night.jpg       # Imagem de fundo (noite)
-├── config.js           # Configurações (não versionado)
 ├── .gitignore          # Arquivos ignorados pelo Git
 └── README.md           # Este arquivo
 ```
-
-## 🔧 Configuração da API
-
-1. Acesse [AccuWeather Developer Portal](https://developer.accuweather.com/)
-2. Crie uma conta gratuita
-3. Gere uma API Key
-4. Substitua `DEMO_KEY_REPLACE_WITH_REAL_KEY` no arquivo `js/weather.js` pela sua chave real
 
 ## 📱 Responsividade
 
@@ -79,12 +67,15 @@ O app foi desenvolvido com foco na responsividade, funcionando perfeitamente em:
 - Interface moderna com tema escuro
 - Animações suaves
 - Ícones SVG otimizados
-- Imagens de fundo dinâmicas baseadas no horário
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- Imagens de fundo dinâmicas baseadas no horário (dia ou noite)
 
 ## 🖼️ Imagem do projeto
-<img width="2000" height="1200" alt="Design sem nome" src="https://github.com/user-attachments/assets/5bb26668-3a48-4421-89c8-a5eaab5bfc87" />
 
+<img width="2000" height="1200" alt="visualização do projeto" src="https://github.com/user-attachments/assets/5e673f7c-cdca-4a30-9874-4645762846b4" />
+
+
+## 🤝 Obrigado!
+
+---
+
+Desenvolvido por [Gabriel](https://github.com/gabste8831) - Uma prática da rotina de estudos em Javascript!
