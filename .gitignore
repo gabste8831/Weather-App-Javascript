@@ -1,0 +1,27 @@
+# Arquivos de configuração com informações sensíveis
+config.js
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Pasta de anotações (contém API keys)
+anotações/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências
+node_modules/
+
+# Arquivos temporários
+*.tmp
+*.temp

@@ -1,0 +1,213 @@
+/* Estilos globais e de corpo */
+body {
+  font-family: sans-serif;
+  background-color: #1a202c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha no topo */
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  /* overflow-y: hidden;  REMOVA ESTA LINHA */
+}
+
+/* Container principal */
+.container {
+  max-width: 430px;
+  width: 100%;
+  padding: 2rem 1rem; /* Mais espaço em cima e embaixo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinha no topo */
+  align-items: center;
+  min-height: 100vh; /* Troque height por min-height */
+  box-sizing: border-box;
+}
+
+/* Título */
+.main-title {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main-title span {
+  color: #3b82f6;
+  font-size: 6rem;
+}
+
+.main-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: -10px 0 1.5rem 0;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Formulário de localização */
+.location-form {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.city-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box; 
+}
+
+
+.city-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.d-none {
+  display: none;
+}
+
+/* Cartão do clima */
+.city-card {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(5px);
+  transition: opacity 0.5s ease;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Imagem do cartão */
+.card-image {
+  width: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  max-height: 350px;
+}
+
+/* Ícone do tempo */
+.time-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: -2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.8s all;
+  box-shadow: 
+    0 0 10px #3b83f63f,
+    0 0 20px #3b83f641,
+    0 0 40px #3b83f634;
+}
+
+.time-icon:hover {
+  transform: scale(1.06);
+  box-shadow: 
+    0 0 10px #3b83f68e,
+    0 0 20px #3b83f685,
+    0 0 40px #3b83f680;
+}
+
+/* Detalhes do clima */
+.weather-details {
+  color: #d1d5db;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.city-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  text-transform: initial;
+}
+
+.city-weather {
+  margin: 0.5rem 0;
+  text-transform: initial;
+}
+
+/* Exibição da temperatura */
+.temperature-display {
+  margin: 0.75rem 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 1rem;
+  background-color: #1a202c;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-title span {
+    font-size: 4.5rem;
+  }
+
+  .card-image {
+    max-height: 200px;
+  }
+
+  .time-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-top: -2rem;
+  }
+
+  .temperature-display {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Weather Application</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">Weather<span>+</span></h1>
+    <label class="main-subtitle" for="city">Insira o nome de uma cidade abaixo</label>
+
+    <form data-js="change-location" class="location-form">
+      <input class="city-input" type="text" name="city" placeholder="Ex: Miami" autofocus>
+      <button class="submit-button">Pesquisar</button>
+    </form>
+
+    <div data-js="city-card" class="city-card d-none">
+      <img data-js="time" src="https://placehold.co/400x300" class="card-image">
+      
+      <div data-js="time-icon" class="time-icon"></div>
+      
+      <div data-js="weather-details" class="weather-details">
+        <h5 data-js="city-name" class="city-name">Nome da Cidade</h5>
+        
+        <div data-js="city-weather" class="city-weather">Clima</div>
+        
+        <div class="temperature-display">
+          <span data-js="city-temperature" class="temperature-value">00</span>
+          <span>&deg;C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
